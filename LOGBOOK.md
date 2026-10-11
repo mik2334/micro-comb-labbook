@@ -39,4 +39,11 @@ Short, dated summaries of each coding session. Full reasoning, calculations and 
 - downloaded mat73 Python library to upload MATLAB data into Python
 - Added code to upload and print data keys and values
 - test successful 
-- Commit code
+- Commit: code [cf1b48c]
+
+## 11-10-2026 - Session: Data understanding
+- loaded the data from MAP00 into a notebook 
+- compared the pump range/increments and delay values with the Suresh paper - values are consistent
+- printed the meta data to understand the layout of the values: for the nPump x nDelay grid, each cell has two graphs for both OSA measurements and Photodiode measurements
+- data stucture is now understood, next step is to visualise and observe behaviours 
+- Commit: code []
