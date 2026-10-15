@@ -32,18 +32,35 @@ Short, dated summaries of each coding session. Full reasoning, calculations and 
 
 ## 08-10-2026 - READING: Suresh et al. 2026, Minimal observables for discriminating laser cavity solitons in a microresonator-filtered fibre laser
 - Notes: 'reading/suresh2026_minimal-observables.md'
-- Lab book p. 10
-- Commit: same as 09-10-2026
+- Lab book p. 10-11
+- Commit: same as 09-10-2026, [cf1b48c]
 
 ## 09-10-2026 - SESSION: Data test
 - downloaded mat73 Python library to upload MATLAB data into Python
-- Added code to upload and print data keys and values
+- Added code to upload and print data keys and values ("09-10-2026_data_load_test.ipynb")
 - test successful 
 - Commit: code [cf1b48c]
 
-## 11-10-2026 - Session: Data understanding
-- loaded the data from MAP00 into a notebook 
+## 11-10-2026 - SESSION: Data understanding
+- loaded the data from MAP00 into a notebook ("11-10-2026_data_check_test.ipynb")
 - compared the pump range/increments and delay values with the Suresh paper - values are consistent
 - printed the meta data to understand the layout of the values: for the nPump x nDelay grid, each cell has two graphs for both OSA measurements and Photodiode measurements
 - data stucture is now understood, next step is to visualise and observe behaviours 
-- Commit: code []
+- Lab book p. 12
+- Commit: code [4df4162]
+
+## 14-10-2026 - SESSION: Visualising data to discriminate states
+- data loaded from MAP00 ("14-10-2026_data_visualise.ipynb")
+- 'osa_axis' used as x-axis for the OSA measurements, with 'OSAS' as the y-axis values
+- 'PDtime' plotted as a function of index number (100,000 values)
+- both plotted on the same subplots, 2 plots for each experimental configuration
+- 5 cells chosen to span the grid, one row per cell, spectrum and trace side by side, (0,0), (0,100), (25, 50), (50, 0), (50, 100)
+- loaded for future discrimination after the following reading, will repeat for different maps
+- Next: read Bao et al. 2019, then label each cell by eye
+- Lab book p. 13
+- Commit: code [_______]
+
+## 14-10-2026 - READING: Bao et al. 2019, Laser cavity-soliton microcombs 
+- Notes: 'reading/bao2019_laser_cavity_solitons.md'
+- Lab book p. 15
+- Commit []
