@@ -71,4 +71,4 @@ Short, dated summaries of each coding session. Full reasoning, calculations and 
 - Actions: required to provide model/feature analysis and comparison - why the implemented model is used, why the chosen features are used and how they affect performance; map the data using pump power and delay as shown in the "Minimal Observables" paper (Fig. 3); aim of the model is to create a map similar to this, based on discrete classifications rather than a continuous index.
 - Next Steps: research neural network models; FT the PD data; map out data 
 - Lab book p. 16 (signed)
-- Commit: code []
+- Commit: code [ff64517]
