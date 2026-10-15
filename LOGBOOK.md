@@ -63,4 +63,12 @@ Short, dated summaries of each coding session. Full reasoning, calculations and 
 ## 14-10-2026 - READING: Bao et al. 2019, Laser cavity-soliton microcombs 
 - Notes: 'reading/bao2019_laser_cavity_solitons.md'
 - Lab book p. 15
-- Commit [ab27142]
+- Commit: code [ab27142]
+
+## 15-10-2026 - MEETING: Supervisor & Co-supervisor
+- Discussed: what extent of physics knowledge is required for this project; what metrics are used within the project; what data to input and what features to use for the model
+- Agreed: create a FT of the PD trace into an RF spectrum; understand physics of the experimental setup rather than fully understanding how states arise; understand states qualitatively
+- Actions: required to provide model/feature analysis and comparison - why the implemented model is used, why the chosen features are used and how they affect performance; map the data using pump power and delay as shown in the "Minimal Observables" paper (Fig. 3); aim of the model is to create a map similar to this, based on discrete classifications rather than a continuous index.
+- Next Steps: research neural network models; FT the PD data; map out data 
+- Lab book p. 16 (signed)
+- Commit: code []
