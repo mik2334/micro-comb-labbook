@@ -58,9 +58,9 @@ Short, dated summaries of each coding session. Full reasoning, calculations and 
 - loaded for future discrimination after the following reading, will repeat for different maps
 - Next: read Bao et al. 2019, then label each cell by eye
 - Lab book p. 13
-- Commit: code [_______]
+- Commit: code [3c8c9f1]
 
 ## 14-10-2026 - READING: Bao et al. 2019, Laser cavity-soliton microcombs 
 - Notes: 'reading/bao2019_laser_cavity_solitons.md'
 - Lab book p. 15
-- Commit []
+- Commit [ab27142]
