@@ -72,3 +72,30 @@ Short, dated summaries of each coding session. Full reasoning, calculations and 
 - Next Steps: research neural network models; FT the PD data; map out data 
 - Lab book p. 16 (signed)
 - Commit: code [ff64517]
+
+## 17-10-2026 - SESSION: Planning Project Structure
+- Model input = measured spectra (OSA + RF); pump/delay only position predictions on the map
+- Proposed three-part comparison (confirm with supervisors): Suresh metrics = thresholds (benchmark, labels) -> ML using the six metrics -> neural networks on the raw spectra
+- Labels from metrics; split by delay columns; circularity handled with a hand-checked test set
+- Lab book p. 17
+
+## 17-10-2026 - SESSION: RF Spectra and Suresh metrics for all cells
+**Metrics**
+- Code: 'src/metrics.py' ('rf_spectrum', 'rf_metrics', 'spectral_moment', 'osa_metrics'), 'src/plotting.py' ('plot_spectra'); notebook '17-10-2026_RF_spectra_metrics.ipynb'
+- RF spectrum: 'rfft' of each PD trace; 100,000 samples, 5KHz resolution, 0-250MHz
+- Metrics per Suresh eqs 1-4: sigma, P_AC, p_AC (f_L = 20MHz); N (using 'find_peaks', prominence = 10dB, distance = 15); second-order moment, fourth-order moment (1520-1575nm)
+- Bugs fixed: AC mask ('freq > 0'); peak-finding settings added
+- Open: second- and fourth-order moments dominated by background, need to agree of noise floor method with supervisor 
+
+**Results**
+- Key results: all 5,151 cells computed -> 'data/MAP00_metrics.npz' (metrics (51, 101, 6); RF 0-20MHz (51,101,4001))
+- Heatmaps + histograms of all six metrics ('pcolormesh', log_10 P_AC/p_AC, log counts)
+- Started N vs sigma (Suresh Fig. 4) with 20kHz boundary
+
+**Evaluation Plan**
+- All three methods scored as classifiers on the same test set, with an independent reference (hand-checked cells; paper's Fig. 4 classification if available)
+- Metrics: confusion matrix; per-class precision; will need to research more
+
+- Next: finish any missing plots, choose appropriate thresholds based on the paper, label cells; week 4: research classification methods
+Lab book p.17-
+- Commit: code []
