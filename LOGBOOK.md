@@ -97,5 +97,32 @@ Short, dated summaries of each coding session. Full reasoning, calculations and 
 - Metrics: confusion matrix; per-class precision; will need to research more
 
 - Next: finish any missing plots, choose appropriate thresholds based on the paper, label cells; week 4: research classification methods
-Lab book p.17-
+Lab book p.17-25
+- Commit: code [d6803e2]
+
+## 20-10-2026 - SESSION: Recreating Suresh Fig. 4
+**Code** 
+- 'compute_metrics' in 'src/metrics.py': returns a dict of metrics, cropped RF spectra, axes, names and settings (taken from the argument)
+- 'plot_spectra', 'plot_metric_maps', 'plot_N_vs_RF' in 'src/plotting.py': all return 'fig'
+
+**Fig. 4 recreation (MAP00)**
+- N on x, RF metric on y (sigma is linear); paper's layout: vertical CW line + diagonal soliton line, "other" inbetween; paper calls these provisional "pre-cluster labels"
+- Physical basis: CW = few lines regardless of noise; soliton = many lines + low noise, tolerance rising with N
+- Prominence 10 -> 8: max N ~90 -> ~105 (paper has ~115), cluster structure unchanged ; CW still N ~ 0-10 (paper has ~5)
+- Draft separators (provisional): CW at N = 8; σ (35, 0)→(105, 350 kHz); log P_AC (25, −5.2)→(95, −0.4); log p_AC (20, −5.75)→(90, −0.3)
+
+**MAP01 / MAP02 follow same settings**
+- Higher RF floor suggests different acquisition settings ; no strongly incoherent states; sharp split at N ~ 50
+- MAP00 separators don't transfer (consistent with the paper's proposed caveat that thresholds are device/condition specific)
+
+**Evaluation Design** 
+- Training labels from method 1; blind by-eye test labels; all three methods scored against them; settings and lines set before final evaluation 
+- Multi-map options: (A) core on MAP00, others as generalisation test; (B) all maps with normalisation, leave one test map out
+
+**QUESTIONS**
+- What are MAP01/02 and why is their noise floor higher; paper's N counting and moment calculation settings; one map vs all three
+
+Next Steps:
+- Set settings for find_peaks and moments and leave untouched (ask supervisor); re-run settings for MAP00 and set lines; check MAP01/02 in metadata (if there is metadata); heatmaps + example spectra for MAP01/02
+- Lab book p. 26-
 - Commit: code []
