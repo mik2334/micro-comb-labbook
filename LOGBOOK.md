@@ -161,3 +161,13 @@ Next Steps:
 - Lab book p. 26-29(signed)
 - Commit: code []
 
+## 23-10-2026 - READING: Kippenberg et al. 2011, Microresonator-Based Optical Frequency Combs
+- Notes written electronically on 25-10-2026
+- Notes: 'reading/kippenberg2011_optical_freq_combs.md'
+- Lab book p. 29
+- Commit: same as 25-10-2026
+
+## 25-10-2026 - READING: Suresh et al Continued
+- Notes: 'reading/suresh2026_minimal-observables.md'
+- Lab book p. 31
+- Commit: []

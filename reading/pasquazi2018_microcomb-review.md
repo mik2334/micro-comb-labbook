@@ -6,7 +6,7 @@ Read: section 1
 
 ## Summary
 Key concepts: 
-- Kerr ring cavities
+- Kerr ring cavities: third order nonlinear effect that induces nonlinear phase shift in optical media, resulting in change of refractive index due to variations in optical intensity 
 - NLS vs Lugatio-Lefever equation (LLE = NLS + loss + detuning + pump)
 - Coherent vs incoherent comb states 
 - Temporal cavity solitons (solitary waves)
