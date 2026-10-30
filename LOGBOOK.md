@@ -165,9 +165,24 @@ Next Steps:
 - Notes written electronically on 25-10-2026
 - Notes: 'reading/kippenberg2011_optical_freq_combs.md'
 - Lab book p. 29
-- Commit: same as 25-10-2026
+- Commit: same as 25-10-2026, [cd3fc10]
 
 ## 25-10-2026 - READING: Suresh et al Continued
 - Notes: 'reading/suresh2026_minimal-observables.md'
 - Lab book p. 31
-- Commit: []
+- Commit: [cd3fc10]
+
+## 25-10-2026 - READING: Practical challenges for lit review
+- label noise, class imbalance, leakage, spectral preprocessing 
+- full notes: [reading/25-10-2026_practical_challenges.md]
+- Physical lab book p. 32
+
+## 26-10-2026 - READING: ML literature for lit review
+- read and summarised methods (decision trees, random forests, SVMs, NN, CNNs)
+- full notes: [reading/26-10-2026_ML_reading.md]
+- key decisions: RF + SVM on Suresh metrics (method 2), 1D CNN on raw spectra (method 3); CNN interpretation as extension
+- Physical lab book p. 37
+
+## 30-10-2026 - SESSION: Writing up of previous notes into electronic lab book
+- went over and translated notes from physical lab book into electronic lab book for future reference
+- Commit: code []
